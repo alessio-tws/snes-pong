@@ -1,0 +1,1 @@
+ca65 --cpu 65816 -s -o sys/sprites.o sys/sprites.s & ca65 --cpu 65816 -s -o logic/ball.o logic/ball.s & ca65 --cpu 65816 -s -o sys/sys.o sys/sys.s & ca65 --cpu 65816 -s -o main.o main.s & ca65 --cpu 65816 -s -o logic/paddles.o logic/paddles.s & ld65 -C memmap.cfg -o pong_clone.smc main.o logic/paddles.o sys/sys.o logic/ball.o sys/sprites.o
